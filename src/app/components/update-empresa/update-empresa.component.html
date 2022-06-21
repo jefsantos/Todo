@@ -1,0 +1,36 @@
+<form>
+
+    <h1>EDITAR USUARIO</h1>
+    
+
+    
+     <div class="forms">
+    
+        <mat-form-field class="form" appearance="fill">
+            <mat-label>CNPJ</mat-label>
+            <input [(ngModel)]="empresa.cnpj" name="empresa.cnpj" matInput placeholder="Cnpj">
+          </mat-form-field>
+        
+          <mat-form-field class="form" appearance="fill">
+            <mat-label>Nome Fantasia</mat-label>
+            <input [(ngModel)]="empresa.nomeFantasia" name="empresa.nomeFantasia" matInput placeholder="PERFIL" disabled="false">
+          </mat-form-field>
+
+          <mat-form-field class="form" appearance="fill">
+            <mat-label>Razão Social</mat-label>
+            <input [(ngModel)]="empresa.razaoSocial" name="empresa.razaoSocial" matInput placeholder="Razao Social">
+          </mat-form-field>
+
+          
+    
+     </div>
+    
+     <div class="buttons">
+        <button  (click)="updateEmpresa()"  mat-stroked-button color="primary">ATUALIZAR</button>
+        <button (click)="cancelar()"mat-stroked-button color="warn">CANCELAR</button>
+    
+    
+     </div>
+    
+    </form>
+    

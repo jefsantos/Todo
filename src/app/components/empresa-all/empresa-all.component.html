@@ -1,25 +1,26 @@
 <div class="container">
  
+  <h1>EMPRESAS CADASTRADAS</h1>
 
   <div class="kanban mat-elevation-z8" >
-    <div class="content" *ngFor="let item of list">
+    <div class="content" *ngFor="let item of listEmpresa">
 
 
       <mat-card class="mat-elevation-z8">
-          <p>DATA PARA FINALIZAR:{{item.datafinalizar}} </p>
+          <p>cert</p>
           <mat-card-header>
           
-            <mat-card-title>{{ item.titulo }}</mat-card-title>
-            <mat-card-subtitle>{{item.descricao}}</mat-card-subtitle>
-            <mat-card-subtitle>R$: {{item.valorUnitario}}, 00</mat-card-subtitle>
+            <mat-card-title>{{item.nomeFantasia}} </mat-card-title>
+            <mat-card-subtitle>{{item.razaoSocial}}</mat-card-subtitle>
+            <mat-card-subtitle> {{ item.cnpj }}</mat-card-subtitle>
           </mat-card-header>
   
           <div class="actions">
-              <button (click)="finalizar(item)"mat-mini-fab color="primary" >
+              <button mat-mini-fab color="primary" >
                   <mat-icon>done</mat-icon>
                 </button>
   
-                <button routerLink="/update/{{item.id}}" mat-mini-fab color="accent" >
+                <button routerLink="/updateEmpresa/{{item.id}}" mat-mini-fab color="accent" >
                   <mat-icon>edit</mat-icon>
                 </button>
   

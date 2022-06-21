@@ -1,10 +1,13 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CreateEmpresaComponent } from './components/create-empresa/create-empresa.component';
 import { CreateUsersComponent } from './components/create-users/create-users.component';
 import { CreateComponent } from './components/create/create.component';
+import { EmpresaAllComponent } from './components/empresa-all/empresa-all.component';
 import { FinalizadosComponent } from './components/finalizados/finalizados.component';
 import { KanbanComponent } from './components/kanban/kanban.component';
 import { ReadAllComponent } from './components/read-all/read-all.component';
+import { UpdateEmpresaComponent } from './components/update-empresa/update-empresa.component';
 import { UpdateUsersComponent } from './components/update-users/update-users.component';
 
 import { UpdateComponent } from './components/update/update.component';
@@ -45,6 +48,15 @@ component: KanbanComponent
 path:'usersAll',
 component: UsersAllComponent
 
+},{
+
+  path:'empresaAll',
+  component:EmpresaAllComponent
+
+},{
+
+  path:'updateEmpresa/:id',
+  component: UpdateEmpresaComponent
 },
 
 
@@ -53,12 +65,12 @@ component: UsersAllComponent
   path:'createUsers',
   component: CreateUsersComponent
   
+  },
+
+  {
+      path: 'createEmpresa',
+      component: CreateEmpresaComponent
   }
-  
-
-
-
-
 
 
 

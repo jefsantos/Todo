@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Todo } from 'src/app/models/todo';
-import { TodoService } from 'src/app/services/todo.service';
+
+import { EmpresaService } from 'src/app/services/empresa.service';
 
 
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import { Empresa } from 'src/app/models/empresa';
 
 @Component({
-  selector: 'app-create',
-  templateUrl: './create.component.html',
-  styleUrls: ['./create.component.css']
+  selector: 'app-create-empresa',
+  templateUrl: './create-empresa.component.html',
+  styleUrls: ['./create-empresa.component.css']
 })
-export class CreateComponent implements OnInit {
+export class CreateEmpresaComponent implements OnInit {
 
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
@@ -21,16 +22,16 @@ export class CreateComponent implements OnInit {
  filteredOptions: Observable<string[]> | undefined;
 
 
-  todo: Todo= {
+  empresa: Empresa= {
 
-    titulo:'',
-    descricao:'',
-    datafinalizar:new Date(),
-    finalizado:false
+    cnpj:'',
+    razaoSocial:'',
+    nomeFantasia:''
+
 
   }
 
-  constructor(private router:Router, private service: TodoService) { }
+  constructor(private router:Router, private service: EmpresaService) { }
 
   ngOnInit(): void {
 
@@ -46,12 +47,12 @@ export class CreateComponent implements OnInit {
     return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
   create(): void{
-    this.formataData();
-    this.service.create(this.todo).subscribe((resposta)=>{
-    this.service.message('Todo Criado com Sucesso');
+    
+    this.service.create(this.empresa).subscribe((resposta)=>{
+    this.service.message('Empresa Criada com Sucesso');
     this.router.navigate(['']);
   }, err =>{
-    this.service.message('Todo Criado sem Sucesso - FALHA');
+    this.service.message('empresa Criado sem Sucesso - FALHA');
     this.router.navigate(['']);
   })
   }
@@ -60,9 +61,6 @@ export class CreateComponent implements OnInit {
     this.router.navigate([''])
   }
 
-  formataData(): void{
-    let data = new Date (this.todo.datafinalizar)
-    this.todo.datafinalizar = `${data.getDate()}/${data.getMonth() +1 }/${data.getFullYear()}`
-  }
+
 
 }

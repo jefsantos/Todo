@@ -29,6 +29,10 @@ import { CreateUsersComponent } from './components/create-users/create-users.com
 import {MatTableModule} from '@angular/material/table';
 import { UpdateUsersComponent } from './components/update-users/update-users.component';
 import { MenuComponent } from './components/menu/menu.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { CreateEmpresaComponent } from './components/create-empresa/create-empresa.component';
+import { EmpresaAllComponent } from './components/empresa-all/empresa-all.component';
+import { UpdateEmpresaComponent } from './components/update-empresa/update-empresa.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { MenuComponent } from './components/menu/menu.component';
     UsersAllComponent,
     CreateUsersComponent,
     UpdateUsersComponent,
-    MenuComponent
+    MenuComponent,
+    CreateEmpresaComponent,
+    EmpresaAllComponent,
+    UpdateEmpresaComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -61,7 +69,8 @@ import { MenuComponent } from './components/menu/menu.component';
     MatDatepickerModule,
     MatNativeDateModule,
     DragDropModule,
-    MatTableModule
+    MatTableModule,
+    MatAutocompleteModule
 
   ],
   providers: [],

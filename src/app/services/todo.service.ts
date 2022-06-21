@@ -11,6 +11,9 @@ import { Todo } from '../models/todo';
 export class TodoService {
   
   baseUrl = environment.baseUrl;
+  contTodoBaseUrl = environment.contTodoBaseUrl;
+
+
 
   constructor(private http:HttpClient, private snack:MatSnackBar) { }
 
@@ -23,9 +26,6 @@ findById(id: any):Observable<Todo>{
   const url =  `${this.baseUrl}/${id}`
 
   return this.http.get<Todo>(url)
-
-
-
 }
 
 update(todo: Todo): Observable<Todo>{
@@ -49,6 +49,11 @@ create(todo: Todo):Observable<Todo>{
      verticalPosition:'top',
      duration:4000
    })
+ }
+
+
+ TodoCont(): Observable<Todo[]>{
+   return this.http.get<Todo[]>(this.contTodoBaseUrl)
  }
 
 

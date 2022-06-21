@@ -1,0 +1,34 @@
+<form>
+
+
+
+<h1>Adicionando Nova Empresa</h1>
+
+
+ <div class="forms">
+
+    <mat-form-field class="form" appearance="fill">
+        <mat-label>CNPJ</mat-label>
+        <input [(ngModel)]="empresa.cnpj" name="empresa.cnpj" matInput placeholder="Informe o Cnpj">
+      </mat-form-field>
+    
+      <mat-form-field class="form" appearance="fill">
+        <mat-label>RAZÃO SOCIAL</mat-label>
+        <input [(ngModel)]="empresa.razaoSocial" name="empresa.razaoSocial" matInput placeholder="Razão Social">
+      </mat-form-field>
+
+      <mat-form-field class="form" appearance="fill">
+        <mat-label>NOME FANTASIA</mat-label>
+        <input [(ngModel)]="empresa.nomeFantasia" name="empresa.nomeFantasia" matInput placeholder="Nome Fantasia da Empresa">
+      </mat-form-field>
+
+ </div>
+
+ <div class="buttons">
+    <button (click)="create()" mat-stroked-button color="primary">CRIAR</button>
+    <button (click)="cancelar()"mat-stroked-button color="warn">CANCELAR</button>
+
+
+ </div>
+
+</form>

@@ -50,3 +50,11 @@ p{
   
 }
 
+h1{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: rgb(75, 73, 73);
+  text-align: center;
+  margin-top: 2rem;
+}

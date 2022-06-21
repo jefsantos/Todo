@@ -1,24 +1,36 @@
 <form>
 
-    <h1>EDITAR MATERIAL</h1>
+    <h1>EDITAR USUARIO</h1>
     
 
     
      <div class="forms">
     
         <mat-form-field class="form" appearance="fill">
-            <mat-label>Titulo</mat-label>
-            <input [(ngModel)]="users.nome" name="users.nome" matInput placeholder="Cimento">
+            <mat-label>NOME</mat-label>
+            <input [(ngModel)]="users.nome" name="users.nome" matInput placeholder="NOME">
           </mat-form-field>
         
           <mat-form-field class="form" appearance="fill">
-            <mat-label>Descrição</mat-label>
-            <input [(ngModel)]="users.perfil" name="users.perfil" matInput placeholder="Areia">
+            <mat-label>SENHA</mat-label>
+            <input [(ngModel)]="users.senha" name="users.senha" matInput placeholder="PERFIL" disabled="true">
           </mat-form-field>
 
           <mat-form-field class="form" appearance="fill">
-            <mat-label>Valor Unitario</mat-label>
-            <input [(ngModel)]="users.perfil" name="users.perfil" matInput placeholder="Valor Unitario">
+            <mat-label>PERFIL</mat-label>
+            <input [(ngModel)]="users.perfil" name="users.perfil" matInput placeholder="PERFIL">
+          </mat-form-field>
+
+          
+          <mat-form-field class="form" appearance="fill">
+            <mat-label>TELEFONE</mat-label>
+            <input [(ngModel)]="users.telefone" name="users.telefone" matInput placeholder="Telefone">
+          </mat-form-field>
+
+                    
+          <mat-form-field class="form" appearance="fill">
+            <mat-label>EMAIL</mat-label>
+            <input [(ngModel)]="users.email" name="users.email" matInput placeholder="email">
           </mat-form-field>
     
      </div>
