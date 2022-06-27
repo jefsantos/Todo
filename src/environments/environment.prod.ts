@@ -12,9 +12,9 @@ export const environment = {
   usersBaseUrl:'https://conectbe-api.herokuapp.com/users',
   baseUrl:'https://conectbe-api.herokuapp.com/todos',
   contUserBaseUrl: 'https://conectbe-api.herokuapp.com/contador',
-  contEmpresaBaseUrl: 'https://conectbe-api.herokuapp.com/quantidadeEmpresa',
+  contEmpresaBaseUrl: 'https://conectbe-api.herokuapp.com/empresas/quantidadeEmpresa',
   empresaBaseUrl:'https://conectbe-api.herokuapp.com/empresas',
-  contTodoBaseUrl:'https://conectbe-api.herokuapp.com/quantidadeServicos'
+  contTodoBaseUrl:'https://conectbe-api.herokuapp.com/todos/quantidadeServicos'
   
   
   
