@@ -15,8 +15,38 @@
     width: 100%;
 }
 
+.header button{
+    margin: auto;
+    background-color: rgba(161, 160, 160, 0.185);
+    width: 100%;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+
+
+.lateral {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 1rem;
+    }
+
 .content{
     width: 100%;
+    margin-top: -15rem;
+    
+}
+
+.infoCenter mat-card{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: .8rem;
+    padding: .2rem;
 }
 
 
@@ -28,10 +58,7 @@
     
 }
 
-mat-card{
-    margin-top: .8rem;
-    padding: .2rem;
-}
+
 
 p{
     text-align: end;

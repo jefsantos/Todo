@@ -1,50 +1,54 @@
 <div class="container">
-    <div class="badge">
-        <button (click)="atrasados()" mat-stroked-button color="primary" matBadge="{{closed}}">Pedidos Atrasados</button>
 
-    </div>
+  <div class="header">
+    <button  mat-stroked-button color="primary" >Olá Jeferson</button>
 
-    <button (click)="novoTodo()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVO SERVIÇO</button>
-    <button (click)="kanban()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">SERVIÇOS</button>
-    <button (click)="telaCadastro()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVO USUARIO</button>
-    <button (click)="voltarUsersAll()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">USUARIOS</button>
-    <button (click)="novaEmpresa()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVA EMPRESA</button>
-    <button (click)="empresasGeral()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">EMPRESAS</button>
 
-    <mat-card >
-      <mat-card-title align ="center">Usuarios Cadastrados</mat-card-title>
-      <br/>
-      <mat-card-title align="center" style="color: #006400;">{{listCount}}</mat-card-title>
-      <mat-card-actions align="end">
-        <button (click)="voltarUsersAll()" mat-button>ver</button>
-        <button mat-button>Share</button>
-      </mat-card-actions>
-    </mat-card>
-    <br>
-    <mat-card>
-      <mat-card-title align="center">Empresas Cadastradas</mat-card-title>
-<br/>
-      <mat-card-title align="center">{{listEmpresaCont}}</mat-card-title>
+</div>
+  <div class="badge">
+      <button (click)="atrasados()" mat-stroked-button color="primary" matBadge="{{closed}}">Contratados</button>
 
-      <mat-card-actions align="end">
-        <button mat-button>Like</button>
-        <button mat-button>Share</button>
-      </mat-card-actions>
-    </mat-card>
-<br>
-    <mat-card>
-      <mat-card-title align="center">Serviços Cadastrados</mat-card-title>
-<br/>
-      <mat-card-title align="center">{{listTodoCont}}</mat-card-title>
+  </div>
+<div class="lateral">
+  <button (click)="novoTodo()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVO SERVIÇO</button>
+  <button (click)="kanban()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">SERVIÇOS</button>
+  <button (click)="telaCadastro()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVO USUARIO</button>
+  <button (click)="voltarUsersAll()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">USUARIOS</button>
+  <button (click)="novaEmpresa()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVA EMPRESA</button>
+  <button (click)="empresasGeral()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">EMPRESAS</button>
 
-      <mat-card-actions align="end">
-        <button (click)="kanban()" mat-button>Ver</button>
-        <button mat-button>Share</button>
-      </mat-card-actions>
-    </mat-card>
+</div>
+<div class="infoCenter">
+  <mat-card >
+    <mat-card-title align ="center">Usuarios Cadastrados</mat-card-title>
+    <br/>
+    <mat-card-title align="center" style="color: #006400;">{{listCount}}</mat-card-title>
+    <mat-card-actions align="end">
+      <button (click)="voltarUsersAll()" mat-button>ver</button>
+      <button mat-button>Share</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title align="center">Empresas Cadastradas</mat-card-title>
+    <mat-card-title align="center">{{listEmpresaCont}}</mat-card-title>
+    <mat-card-actions align="end">
+      <button mat-button>Like</button>
+      <button mat-button>Share</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title align="center">Serviços Cadastrados</mat-card-title>
+    <mat-card-title align="center">{{listTodoCont}}</mat-card-title>
+    <mat-card-actions align="end">
+      <button (click)="kanban()" mat-button>Ver</button>
+      <button mat-button>Share</button>
+    </mat-card-actions>
+  </mat-card>
 
 </div>
 
-
+</div>
 
 
