@@ -20,7 +20,7 @@ export class ReadAllComponent implements OnInit {
   listEmpresaCont: any;
 
 
-  constructor(private empresaService: EmpresaService, private service:TodoService, private usersService: UsersService, private router: Router) { }
+  constructor( private empresaService: EmpresaService, private service:TodoService, private usersService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -124,6 +124,13 @@ voltarReadAll():void{
 
 telaCadastro(): void{
   this.router.navigate(['createUsers'])
+  
+}
+
+
+
+WhatsTimeIsIt (): void{
+  Date.now();
 }
 
 }
