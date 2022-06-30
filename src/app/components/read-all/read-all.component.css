@@ -15,6 +15,8 @@
     width: 100%;
 }
 
+
+
 .header button{
     margin: auto;
     background-color: rgba(161, 160, 160, 0.185);
@@ -24,35 +26,43 @@
 }
 
 
-
 .lateral {
-    width: 30%;
-    height: 100%;
+    width: 25%;
     margin: 0;
     padding: 0;
     float: left;
     margin-top: 1rem;
+    height: 100vh
     }
 
-.content{
-    width: 100%;
-    margin-top: -15rem;
-    
-}
 
 .infoCenter mat-card{
-
+    width: 80%;
+    margin-left: .3rem;
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: .8rem;
+    margin-top: .2rem;
     padding: .2rem;
+}
+
+.infoCenter {
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: .8rem;
+    margin-right: .2rem;
+    margin-left: 10rem;
+    padding: .2rem;
+    
+    
 }
 
 
 .novo-todo{
     margin-top: .8rem;
-    width: 49.7%;
+    width: 100%;
     margin: .1rem;
  
     
@@ -77,3 +87,9 @@ p{
     
 }
 
+
+.content{
+    width: 100%;
+    margin-top: -15rem;
+    
+}

@@ -1,14 +1,13 @@
 <div class="container">
 
   <div class="header">
-    <button  mat-stroked-button color="primary" >Olá Jeferson </button>
-
-
+    <button  mat-stroked-button color="primary" >Olá </button>
 </div>
+
   <div class="badge">
       <button (click)="atrasados()" mat-stroked-button color="primary" matBadge="{{closed}}">Contratados</button>
+</div>
 
-  </div>
 <div class="lateral">
   <button (click)="novoTodo()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVO SERVIÇO</button>
   <button (click)="kanban()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">SERVIÇOS</button>
@@ -16,8 +15,8 @@
   <button (click)="voltarUsersAll()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">USUARIOS</button>
   <button (click)="novaEmpresa()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">NOVA EMPRESA</button>
   <button (click)="empresasGeral()" class =" novo-todo mat-elevation-z8" mat-stroked-button color="primary">EMPRESAS</button>
-
 </div>
+
 <div class="infoCenter">
   <mat-card >
     <mat-card-title align ="center">Usuarios Cadastrados</mat-card-title>
