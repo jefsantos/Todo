@@ -128,9 +128,12 @@ telaCadastro(): void{
 }
 
 
+timeIsIt(){
+  this.service.TodoCont().subscribe(data=>{
+    this.listTodoCont=data;
+  })
 
-WhatsTimeIsIt (): void{
-  Date.now();
+
 }
 
 }
